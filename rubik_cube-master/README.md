@@ -1,69 +1,66 @@
 # OpenGL/glut Rubik Cube
 Rubik Cube in C++ with OpenGL/glut
 
-## Documentation
+# Projet Rubik's Cube Computer Graphics 2021
 
-This project was done for a Computer Graphics course in my last graduation period at Universidade Federal de Uberlândia along with 3 mates.
+Voici le projet de Rubik's cube fait par Kevin TRAN, Alexandre MANETA, et Steven QUIOT
 
-Everything is in one file just because.
+Veuillez vérifier d'avoir les dépendances nécessaires au bon fonctionnement du projet. Pour cela, n'oubliez pas de lancer le fichier ./install.sh (en mode administrateur)
 
-**Compile with:** *make*
+**Pour compiler faites : ** *make*
 
-**Run with:** *./rubik\_cube*
+**Pour lancer le programme faites : ** *./rubik\_cube*
 
-### Commands
+### Comment intéragir avec l'application ? 
 
-Commands are case-insensitive
+Visualisation du cube :
 
-**Cube visualization**
+L: rotation droite
 
-L: rotate right
+J: rotation gauche
 
-J: rotate left
+I: rotation bas
 
-I: rotate down
+K: rotate haut
 
-K: rotate up
++: zoom 
 
-+: zoom in
+-: dézoom
 
--: zoom out
+clique gauche : zoom
 
-mouse left click: zoom in
+clique droit : dézoom
 
-mouse right click: zoom out
+**Sélection de la face pour bouger le cube :**
 
-**Face selection(for moving parts)**
+Veuillez prendre en compte qu'il n'y a pas de feedback indiquant quelle face vous bougez.
 
-There is no face selection feedback.
-(Consider left-bottom as origin)
+*En suivant l'axe des x*
 
-*Along x axis*
+Q: Selection de la première tranche
 
-Q: select 1st layer
+W: Selection de la deuxième tranche
 
-W: select 2nd layer
+E: Selection de la troisième tranche
 
-E: select 3rd layer
+*En suivant l'axe des y*
 
-*Along y axis*
+A: Selection de la première tranche
 
-A: select 1st layer
+S: Selection de la deuxième tranche
 
-S: select 2nd layer
+D: Selection de la troisième tranche
 
-D: select 3rd layer
+*En suivant l'axe des z*
 
-*Along z axis*
+Z: Selection de la première tranche
 
-Z: select 1st layer
+X: Selection de la deuxième tranche
 
-X: select 2nd layer
+C: Selection de la troisième tranche
 
-C: select 3rd layer
+Rotation des faces
 
-**Face rotation**
+O: Rotation horaire de la face sélectionnée
 
-O: rotate selected face clockwise
-
-U: rotate selected face counter-clockwise
+U: Rotation anti-horaire de la face sélectionnée
