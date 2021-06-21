@@ -1,7 +1,7 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <vector>
-#include "view.cpp"
+#include <string>
 
 using namespace std;
 
@@ -14,7 +14,6 @@ struct cube_rotate{
 
 GLfloat angle, fAspect, cube_size;
 GLint rot_x, rot_y, crement, x_0, x_k, y_0, y_k, z_0, z_k, gap, gap_crement;
-
 
 //cube_rotate cube_rotations[3][3][3];
 vector<cube_rotate> cube_rotations[3][3][3];
@@ -245,3 +244,17 @@ void keyboard_func(unsigned char key, int x, int y)
 
 }
 
+// window reshape callback
+void reshape_func(GLsizei w, GLsizei h)
+{
+  // prevents division by zero
+  if ( h == 0 ) h = 1;
+
+  // viewport size
+  glViewport(0, 0, w, h);
+
+  // aspect ratio
+  fAspect = (GLfloat)w/(GLfloat)h;
+
+  load_visualization_parameters();
+} // reshape function
